@@ -1,6 +1,6 @@
 # mbStromer
 
-The Asymetric Power Supply for Eurorack.
+The Asymmetric Power Supply for Eurorack.
 
 ![pcb image](image01.png "Logo Title Text 1")
 
