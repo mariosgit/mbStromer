@@ -2,7 +2,7 @@
 
 The Asymmetric Power Supply for Eurorack.
 
-![pcb image](image01.png "Logo Title Text 1")
+![pcb image](rendering.png "Logo Title Text 1")
 
 Provides up to 50W, oldschool linear regulator stuff (low noise), for use with a transformer (2x12V 50VA)
 * 12V 3A
