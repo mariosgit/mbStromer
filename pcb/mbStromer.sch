@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -20231,7 +20231,6 @@ Source: coiltronics_dr_series.pdf</description>
 <part name="P-1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-15V" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="X1" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-04P" device="" package3d_urn="urn:adsk.eagle:package:10735/1"/>
 <part name="P-2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-15V" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -20296,6 +20295,7 @@ Source: coiltronics_dr_series.pdf</description>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20343,9 +20343,6 @@ Source: coiltronics_dr_series.pdf</description>
 </instance>
 <instance part="GND3" gate="1" x="111.76" y="50.8" smashed="yes">
 <attribute name="VALUE" x="109.22" y="48.26" size="1.778" layer="96"/>
-</instance>
-<instance part="GND4" gate="1" x="66.04" y="27.94" smashed="yes">
-<attribute name="VALUE" x="63.5" y="25.4" size="1.778" layer="96"/>
 </instance>
 <instance part="X1" gate="-1" x="-7.62" y="48.26" smashed="yes">
 <attribute name="NAME" x="-8.89" y="49.149" size="1.778" layer="95" rot="R180"/>
@@ -20507,6 +20504,9 @@ Source: coiltronics_dr_series.pdf</description>
 <instance part="GND22" gate="1" x="129.54" y="40.64" smashed="yes">
 <attribute name="VALUE" x="127" y="38.1" size="1.778" layer="96"/>
 </instance>
+<instance part="GND4" gate="1" x="50.8" y="27.94" smashed="yes">
+<attribute name="VALUE" x="48.26" y="25.4" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -20614,6 +20614,20 @@ Source: coiltronics_dr_series.pdf</description>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="GND22" gate="1" pin="GND"/>
 </segment>
+<segment>
+<wire x1="55.88" y1="30.48" x2="55.88" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<wire x1="55.88" y1="30.48" x2="50.8" y2="30.48" width="0.1524" layer="91"/>
+<junction x="55.88" y="30.48"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="30.48" x2="38.1" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="30.48" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="30.48" x2="71.12" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="C16" gate="G$1" pin="1"/>
+<wire x1="71.12" y1="30.48" x2="71.12" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+<junction x="50.8" y="30.48"/>
+</segment>
 </net>
 <net name="+15V" class="2">
 <segment>
@@ -20702,22 +20716,6 @@ Source: coiltronics_dr_series.pdf</description>
 <junction x="71.12" y="15.24"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="66.04" y1="12.7" x2="66.04" y2="15.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<wire x1="55.88" y1="30.48" x2="55.88" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="66.04" y1="30.48" x2="55.88" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="30.48" x2="38.1" y2="30.48" width="0.1524" layer="91"/>
-<junction x="55.88" y="30.48"/>
-<pinref part="C12" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="30.48" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="30.48" x2="71.12" y2="30.48" width="0.1524" layer="91"/>
-<junction x="66.04" y="30.48"/>
-<pinref part="C16" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="30.48" x2="71.12" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V_2" class="1">
