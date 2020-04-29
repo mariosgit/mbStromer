@@ -31,3 +31,18 @@ When used without heatsink, put it on distancers so air can circulate around the
 ## Todo
 
 * Add 5V option ? No one uses it anyway !? Disturbs fend-shui of the layout :-P
+
+## License
+
+#### Attribution-NonCommercial-ShareAlike - CC BY-NC-SA 
+
+```
+Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+NonCommercial — You may not use the material for commercial purposes.
+
+ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+
+No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+```
+[All the legal blabla here](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
